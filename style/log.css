@@ -1,0 +1,309 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    background: url(../img/Dark-Wallpaper-Nature.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:aliceblue;
+}
+header {
+   
+    position: absolute;
+    font-family: sans-serif;
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,255,255,.1);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+  left: 20%;
+    right: 20%;
+    top: 2%;
+    
+ 
+}
+header h1{
+    padding: 0;
+    margin: 0;
+     font-size: 30px;
+   color:rgba(255,255,255,.1);
+    background-image: url(../img/wave2.png);
+  
+    background-repeat: repeat-x;
+    -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite
+
+    /* background: -webkit-linear-gradient(#eee, #71ff3d);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    */
+}
+@keyframes animate
+{
+    0%{
+        background-position: left 0px top 30px;
+    }
+    40%{
+        background-position: left 800px top -20px;
+    }
+    80%{
+        background-position: left 1800px top -30px;
+    }
+     100%{
+        background-position: left 2400px top 30px;
+    }
+}
+
+.box-login
+{
+   transition = .3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+    }
+.box-login h2{
+    margin 0 0 30px;
+    padding:0;
+    color:#fff;
+    text-align:center;
+}
+.box-login .inputbox
+{
+    position: relative;
+}
+.box-login .inputbox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#fff;
+    letter-spacing: 1px;
+
+    margin-bottom:30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.box-login .inputbox label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+     padding: 10px 0;
+    font-size: 16px;
+    color:#fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.box-login .inputbox input:focus ~ label ,
+.box-login .inputbox input:valid ~ label
+{
+    top:-10px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 10px;
+}
+.box-login input[type="submit"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 3px #333;
+    color:#fff;
+    background:#71ff3d; /*#03a9f4;*/
+    padding:10px 20px;
+    cursor:pointer;
+   /* border-radius:5%;*/
+    width: 100%;
+    transition: .3s;
+}
+.box-login input[type="submit"]:hover
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 3px #333;
+    color:#fff;
+    background:#a8f787; /*#03a9f4;*/
+    padding:10px 20px;
+    cursor:pointer;
+   /* border-radius:5%;*/
+    width: 100%;
+}
+.box-login input[type="button"]
+{   margin-top:2px;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 3px #333;
+    color:#fff;
+    background:#03a9f4; /*#03a9f4;*/
+    padding:10px 20px;
+    cursor:pointer;
+   /* border-radius:5%;*/
+    width: 100%;
+    transition: .3s;
+}
+.box-login input[type="button"]:hover
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 3px #333;
+    color:#fff;
+    background:#1bd2f7; /*#03a9f4;*/
+    padding:10px 20px;
+    cursor:pointer;
+   /* border-radius:5%;*/
+    width: 100%;
+}
+/*signup*/
+.box-signup
+{  
+    position: absolute;
+    top: 50%;
+    left: -500vw;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 20px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+    transition = 3s;
+    }
+.box-signup h2{
+    margin 0 0 20px;
+    padding:0;
+    color:#fff;
+    text-align:center;
+}
+.box-signup .inputbox
+{
+    position: relative;
+    transition: .1s;
+}
+.box-signup .inputbox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#fff;
+    letter-spacing: 2px;
+    transition: .1s;
+    margin-bottom:30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.box-signup .inputbox label
+{     transition: .1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+     padding: 10px 0;
+    font-size: 16px;
+    color:#fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.box-signup .inputbox input:focus ~ label ,
+.box-signup .inputbox input:valid ~ label
+{    transition: .1s;
+    top:-10px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 10px;
+}
+.box-signup input[type="submit"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 3px #333;
+    color:#fff;
+    background:#86ff49; /*#03a9f4;*/
+    padding:10px 20px;
+    cursor:pointer;
+   /* border-radius:5%;*/
+    width: 100%;
+    transition: .3s;
+}
+
+.box-signup input[type="submit"]:hover
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 3px #333;
+    color:#fff;
+    background:#a8f787; /*#03a9f4;*/
+    padding:10px 20px;
+    cursor:pointer;
+   /* border-radius:5%;*/
+    width: 100%;
+}
+.box-signup input[type="button"]
+{   margin-top:2px;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 3px #333;
+    color:#fff;
+    background:#03a9f4; /*#03a9f4;*/
+    padding:10px 20px;
+    cursor:pointer;
+   /* border-radius:5%;*/
+    width: 100%;
+    transition: .3s;
+}
+.box-signup input[type="button"]:hover
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 3px #333;
+    color:#fff;
+    background:#1bd2f7; /*#03a9f4;*/
+    padding:10px 20px;
+    cursor:pointer;
+   /* border-radius:5%;*/
+    width: 100%;
+}
+footer{
+    height: 7%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    
+}
+footer h2{
+    padding: 2px;
+font-size: 14px;
+}
+@media only screen and (max-width: 750px) {
+  footer h2{
+    padding: 1px;
+font-size: 12px;
+}
+}
